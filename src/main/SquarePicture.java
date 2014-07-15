@@ -46,12 +46,10 @@ public class SquarePicture {
                             startrows = i;
                         }
                         if (length < (i - startrows) && length != 0) {
-                            //System.out.println("Fläche entspricht keinem quadrat");
                             break;
                         }
                     }
                     if (!(start.equals(startOld))) {
-                        //System.out.println("Falscher Startpunkt in zeile" + i + " Zeichen" + j);
                         break;
                     }
 
@@ -65,7 +63,6 @@ public class SquarePicture {
                             length = end - start;
                         }
                         if (!(end.equals(endOld))) {
-                            //System.out.println("Falscher Endpunkt in Zeile " + i + " Zeichen" + j);
                             break;
                         }
                     }
