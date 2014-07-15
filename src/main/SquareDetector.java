@@ -12,29 +12,19 @@ import java.util.Scanner;
 public class SquareDetector {
 
     public static void main(String[] args) {
-        Integer start = 0;
-        Integer end = 0;
-        Integer endOld = 0;
-        Integer startOld = 0;
-        Integer startrows = 0;
-        Integer length = 0;
-        Scanner feldscanner = new Scanner(System.in);
+       /* Scanner feldscanner = new Scanner(System.in);
         Integer anzBilder = Integer.parseInt(feldscanner.nextLine());
-
-        Integer count = 0;
-        double root = 0;
-
-
         for (int h = 1; h <= anzBilder; h++) {
-            end = 0;
-            start = 0;
+            double root = 0;
+            Integer count = 0;
+            Integer start = 0;
+            Integer end = 0;
+            Integer startrows = 0;
+            Integer length = 0;
             Integer groesse = Integer.parseInt(feldscanner.nextLine());
-            startrows = 0;
-            length = 0;
-            count = 0;
             for (int i = 1; i <= groesse; i++) {
-                startOld = start;
-                endOld = end;
+                Integer endOld = end;
+                Integer startOld = start;
                 end = 0;
                 start = 0;
                 String zeile = (feldscanner.nextLine());
@@ -82,6 +72,11 @@ public class SquareDetector {
             } else {
                 System.out.println("Case #" + h + ": NO");
             }
-        }
+       }
+    */
+        Scanner feldscanner = new Scanner(System.in);
+        SquareInput input= new SquareInput(feldscanner);
+        System.out.println(input.isSquare());
+
     }
 }
