@@ -13,28 +13,15 @@ public class SquareInput {
         amount = Integer.parseInt(picScanner.nextLine());
         input = picScanner;
     }
-
-
     private char[][] nextPicture() {
         //returns picture that has the width of the square picture and the data about the white and Black areas eg "3.##.##..."
         Integer width = Integer.parseInt(input.nextLine());
-/*        String picture;
-
-        picture = "" + width;
-        picture = "" + picture.length() + width;
+        char[][] picture = new char[width][width];
         for (int i = 0; i < width; i++) {
-            picture = picture + input.nextLine();
-        }*/
-        char[][] picturessss = new char[width][width];
-        for (int i = 0; i <width ; i++) {
-            picturessss[i] = input.nextLine().toCharArray();
+            picture[i] = input.nextLine().toCharArray();
         }
-
-
-
-        return picturessss;
+        return picture;
     }
-
     public String isSquare() {
         String result = "";
         for (int i = 1; i <= amount; i++) {

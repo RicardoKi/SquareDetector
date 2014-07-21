@@ -9,8 +9,7 @@ public class SquareDetector {
 
     public static void main(String[] args) {
         Scanner feldscanner = new Scanner(System.in);
-        SquareInput input= new SquareInput(feldscanner);
+        SquareInput input = new SquareInput(feldscanner);
         System.out.println(input.isSquare());
-
     }
 }
