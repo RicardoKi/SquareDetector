@@ -25,7 +25,7 @@ public class SquareInput {
     public String isSquare() {
         String result = "";
         for (int i = 1; i <= amount; i++) {
-            SquarePicture picture = new SquarePicture(this.nextPicture());
+            SquarePicture picture = new SquarePicture(nextPicture());
             result = result + "\n Case #" + i + ": " + picture.isSquareNew();
         }
         return result;
